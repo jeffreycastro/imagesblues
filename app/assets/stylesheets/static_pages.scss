@@ -86,10 +86,18 @@ p {
 .header-container h3 {
   color: #fff;
   float: left;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 #navlinks {
   margin-left: auto;
+}
+
+#navlinks > ul > li > a {
+  color: #fff;
 }
 
 

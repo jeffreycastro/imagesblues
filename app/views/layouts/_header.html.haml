@@ -1,9 +1,9 @@
 %header.navbar.navbar-fixed-top.navbar-inverse
   .container.header-container
-    = link_to image_tag("ladyBug_stroked.png", size: 70), '#', id: "logo"
-    %h3= "i M a g e s B l u e s"
+    = link_to image_tag("ladyBug_stroked.png", size: 70), root_path, id: "logo"
+    %h3= link_to "i M a g e s B l u e s", root_path
     %nav#navlinks
       %ul.nav.navbar-nav.navbar-right
-        %li= link_to "About",   '#'
-        %li= link_to "Work",   '#'
-        %li= link_to "Contact", '#'
+        %li= link_to "ABOUT",   '#'
+        %li= link_to "WORK",   '#'
+        %li= link_to "CONTACT", '#'

@@ -171,13 +171,13 @@ p {
   background-position: center center;
 }
 
-#imagineers-div .jumbotron {
-  background-color : transparent;
-}
-
 #imagineers-div > .center {
   display: table;
   margin: 0 auto;
+}
+
+#imagineers-div .jumbotron {
+  background-color : transparent;
 }
 
 .imagineers-title {

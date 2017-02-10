@@ -147,7 +147,7 @@ p {
 
 .learnmore-title h1 {
   color: #fff;
-  font-size: 6em;
+  font-size: 5em;
   font-weight: 900;
 }
 
@@ -165,7 +165,7 @@ p {
   align-items: center;
   width: 100%;
   height: 650px;
-  background-color: #0e75c7;
+  background-color:    #0e75c7;
   background-size:     cover;
   background-repeat:   no-repeat;
   background-position: center center;
@@ -185,26 +185,76 @@ p {
   align-items: center;
 }
 
-.imagineers-title h1 {
-  color: #fff;
-  font-size: 6em;
-  font-weight: 900;
-  display: inline-block;
+.weare {
+  display: flex;
+  align-items: center;
+  margin: auto;
 }
 
-.we-are {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.we-are h1 {
+.weare h1 {
   color: #fff;
-  font-weight: 100 !important;
+  font-size: 5em;
+  display: inline-block;
 }
 
 #imagineers-div p {
   margin-bottom: 0px;
   font-size: 2.5em;
+  line-height: 1.1;
+  font-weight: 100;
+}
+
+#whatwedo-div {
+  display: flex;
+  width: 100%;
+  height: 350px;
+  background-color:    #fff;
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
+
+#whatwedo-div .jumbotron {
+  background-color : transparent;
+}
+
+.whatwedo-title h1 {
+  color: #0e75c7;
+  font-size: 5em;
+  display: inline-block;
+}
+
+#augreality-div {
+  display: flex;
+  width: 100%;
+  height: 350px;
+  background-color:    #7d56ca;
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
+
+#augreality-div > .center {
+  display: table;
+  margin: 0 auto;
+}
+
+#augreality-div .jumbotron {
+  background-color : transparent;
+}
+
+.augreality-title h1 {
+  color: #fff;
+  font-size: 5em;
+  font-weight: 100;
+  display: inline-block;
+}
+
+#augreality-div p {
+  color: #fff;
+  margin-top: 70px;
+  margin-bottom: 0px;
+  font-size: 2em;
   line-height: 1.1;
   font-weight: 100;
 }

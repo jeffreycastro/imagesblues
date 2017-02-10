@@ -7,12 +7,27 @@
 #imagineers-div
   .center.jumbotron
     .imagineers-title
-      .we-are
-        %h1= "WE ARE"
-      %h1= "IMAGINEERS"
-      = image_tag("butterfly.png")
-
+      .weare
+        %h1
+          = "WE ARE"
+          %strong= "IMAGINEERS"
+        = image_tag("butterfly.png")
     %p
       = "We seek to inspire and innovate by harnessing the prowess of"
     %p
       = "cutting-edge technology, digital graphics and playful arts."
+
+.container{ style: "width: 95%" }
+  #whatwedo-div
+    .jumbotron
+      .whatwedo-title
+        %h1
+          ="WHAT"
+          %strong="WE DO"
+
+#augreality-div
+  .center.jumbotron
+    .augreality-title
+      %h1 Augmented Reality
+    %p
+      "We augment your dreams to life."

@@ -5,22 +5,11 @@
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
   %body
-    %header.navbar.navbar-fixed-top.navbar-inverse
-      .container.header-container
-        = link_to image_tag("ladyBug_stroked.png", size: 70), '#', id: "logo"
-        %h3= "i M a g e s B l u e s"
-        %nav#navlinks
-          %ul.nav.navbar-nav.navbar-right
-            %li= link_to "About",   '#'
-            %li= link_to "Work",   '#'
-            %li= link_to "Contact", '#'
-  .container.main-content-container
-    = yield
-  %footer.footer.navbar-inverse
-    .container.footer-container
-      %h5
-        .copyright
-          = "Copyright © iMagesBlues 2016"
-        .contact
-          = "contact@imagesblues.com"
+    = render 'layouts/header'
+
+    .container.main-content-container
+      = yield
+
+  = render 'layouts/footer'

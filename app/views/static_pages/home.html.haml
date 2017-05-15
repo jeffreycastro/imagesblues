@@ -1,24 +1,26 @@
 #learnmore-div
-  .center.jumbotron
-    .learnmore-title
-      %h1 AR. VR. GAMES.
-      = link_to "LEARN MORE", "", class: "btn btn-lg btn-primary learnmore-link"
+  .col-xs-12
+    .center.jumbotron
+      .learnmore-title
+        %h1 AR. VR. GAMES.
+        = link_to "LEARN MORE", "", class: "btn btn-lg btn-primary learnmore-link"
 
 #imagineers-div
-  .center.jumbotron
-    .imagineers-title
-      .weare
-        %h1
-          = "WE ARE"
-          %strong= "IMAGINEERS"
-        = image_tag("butterfly.png")
-    %p
-      = "We seek to inspire and innovate by harnessing the prowess of"
-    %p
-      = "cutting-edge technology, digital graphics and playful arts."
+  .col-xs-12
+    .center.jumbotron
+      .imagineers-title
+        .weare
+          %h1
+            = "WE ARE"
+            %strong= "IMAGINEERS"
+          = image_tag("butterfly.png")
+      %p
+        = "We seek to inspire and innovate by harnessing the prowess of"
+      %p
+        = "cutting-edge technology, digital graphics and playful arts."
 
-.container{ style: "width: 95%" }
-  #whatwedo-div
+#whatwedo-div
+  .col-xs-12
     .jumbotron
       .whatwedo-title
         %h1
@@ -26,16 +28,21 @@
           %strong="WE DO"
 
 #augreality-div
-  .center.jumbotron
-    .augreality-title
-      %h1 Augmented Reality
-    %p
-      "We augment your dreams to life."
+  .col-xs-12
+    .center.jumbotron
+      .augreality-title
+        %h1 Augmented Reality
+      %p
+        "We augment your dreams to life."
 
 #media-div
+  .col-xs-12
+    .center
+      .yt-container
+        = content_tag(:iframe, nil, src: "https://www.youtube.com/embed/oH_LfXnklRw", frameborder: "0", webkitallowfullscreen: '',  mozallowfullscreen: '', allowfullscreen: '', class: 'yt-video')
+
+.col-xs-12#media-desc-div
   .center
-    #videoframe
-      = content_tag(:iframe, nil, src: "https://www.youtube.com/embed/oH_LfXnklRw", frameborder: "0", webkitallowfullscreen: '',  mozallowfullscreen: '', allowfullscreen: '')
     %p= "Breathe life to your products and make them accesible to"
     %p= "thousands of users through our mobile AR platform"
     %br/
